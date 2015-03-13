@@ -21,6 +21,7 @@ write(__dirname + '/../integrations.js', [
   "",
   "module.exports = [",
     readdir(__dirname + '/../lib')
+      .filter(function(slug){ return process.env.INTEGRATION ? slug === process.env.INTEGRATION : true })
       .filter(function(slug){ return fs.existsSync(path.join('./lib', slug, 'index.js')); })
       .map(function(slug){ return "require('./lib/" + slug + "')"; })
       .join(',\n')
