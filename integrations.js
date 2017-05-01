@@ -4,5 +4,6 @@
  */
 
 module.exports = [
+  require('./lib/adroll'),
   require('./lib/threads')
 ];
