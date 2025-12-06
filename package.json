@@ -2,8 +2,8 @@
   "name": "integrations",
   "private": true,
   "devDependencies": {
-    "duo": "0.8",
-    "duo-test": "0.2",
+    "duo": "0.15.7",
+    "duo-test": "0.3.0",
     "mocha-phantomjs": "segmentio/mocha-phantomjs#master",
     "phantomjs": "~1.9.2-2",
     "mocha": "~1.18.2",
